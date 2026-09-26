@@ -44,7 +44,7 @@ we are fixing inconsistent data*/
 IF OBJECT_ID('gold.dim_customers', 'V') IS NOT NULL
     DROP VIEW gold.dim_customers;
 GO
-CREATE VIEW gold.di_customers AS
+CREATE VIEW gold.dim_customers AS
 		SELECT
 			ROW_NUMBER() OVER(ORDER BY cst_id) AS customer_key,--adding unique identifier for each customer"surrigate key"
 			ci.cst_id AS customer_id,
