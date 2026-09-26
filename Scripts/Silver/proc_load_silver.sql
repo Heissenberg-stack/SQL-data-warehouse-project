@@ -145,7 +145,7 @@ CREATE OR ALTER PROCEDURE silver.Load_silver
 			CASE WHEN 
 				TRIM(cntry) = 'DE' THEN 'Germany'
 				WHEN
-				TRIM(cntry) IN ('USA','US') THEN 'States'
+				TRIM(cntry) IN ('USA','US','United States') THEN 'United States'
 				WHEN
 				cntry IS NULL OR TRIM(cntry) Like'' THEN 'N/A'
 				WHEN
