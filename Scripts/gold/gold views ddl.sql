@@ -1,3 +1,11 @@
+/* >>DDL script: gold layer(creating views from silver layer)<<
+                 SCRIPT PURPOSE
+>>this script will create views for gold layers by merging and creating new data sets using the 
+findings in the silver layer
+                 FUNCTIONALITY
+
+
+*/
 /* creating dimension for products*/
 CREATE VIEW gold.dim_product AS
 SELECT
