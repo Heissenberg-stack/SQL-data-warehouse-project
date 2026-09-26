@@ -1,6 +1,16 @@
-		/*======================*/
-		/* DML insertion into silver_crm_cust_info*/
-		/*======================*/
+/*
+>>Stored procedure:DML loading silver layer(bronze to silver)<<
+                   SCRIPT PURPOSE
+the purpose of this script is to 
+1.extract from bronze
+2.transform data from bronze layer into desired,clean and structured data
+3.Insertion of the transformed data into silver layer tables
+
+*/
+
+CREATE OR ALTER PROCEDURE silver.Load_silver
+	BEGIN
+
 		PRINT'>>> Truncating data FROM silver.crm_cust_info'
 		TRUNCATE TABLE silver.crm_cust_info
 		PRINT'>>> Loading data into silver.crm_cust_info'
