@@ -1,12 +1,14 @@
 
 -- Creating database tables--
---CRM cust_info table--
+      --Bronze layer--
+--DDL script:create the base table for the database that contains all raw data without any modifiction--
+
 
 /*Note that this script will drop the whole table and replace it with a new one 
 can be used if you want to change data type or column name*/ 
 ----------------------------------------------------------
 -----------------------------------------------------------
-
+--crm_cust_info--
 IF OBJECT_ID('bronze.crm_cust_info','U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info 
 CREATE TABLE bronze.crm_cust_info
