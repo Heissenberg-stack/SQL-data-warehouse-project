@@ -11,3 +11,4 @@ This project serves as an **applied implementation** of modern data warehousing 
 
 ## 🏗️ Architecture & Pipeline Overview
  
+<img width="1222" height="618" alt="data warehouse diagram" src="https://github.com/user-attachments/assets/d6bd87cf-0cda-4130-bfe9-e9f29ceddfba" />
