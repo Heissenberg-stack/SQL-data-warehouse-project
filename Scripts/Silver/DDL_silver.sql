@@ -1,8 +1,8 @@
-/*======================*/
-/* DDL For silver layer*/
-/*======================*/
--- Creating database tables--
---CRM cust_info table--
+/* >>DDL script for silver layer<<
+              SCRIPT PURPOSE
+this script runs to drop the whole table and create it again if it exist
+running the script will re-define the table structure for" bronze" layer
+*/
 
 /*Note that this script will drop the whole table and replace it with a new one 
 can be used if you want to change data type or column name*/ 
